@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'BBB';
+  numbers: number[] = [];
+
+  onStartCounter(counter: number) {
+    console.log(counter)
+    this.numbers.push(counter);
+  }
 }
